@@ -30,7 +30,6 @@ export const create = async (req: Request<{}, {}, ICidade>, res: Response) => {
   }
 
   const data = req.body.nome;
-  console.log("~ data:", data)
 
-  return res.send(`Create!`);
+  return res.send(`Create: ${data}!`);
 };

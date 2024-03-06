@@ -58,5 +58,5 @@ export const create = async (req: Request<{}, {}, ICidade>, res: Response) => {
   const data = req.body.nome;
   const newData = req.body.estado;
 
-  return res.send(`Create: ${newData} and ${data}!`);
+  return res.send(`Create: ${newData} em ${data}!`);
 };

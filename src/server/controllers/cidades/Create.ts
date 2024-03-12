@@ -54,7 +54,7 @@ export const createQueryValidator: RequestHandler = async (req, res, next) => {
   }
 };
 
-export const create = async (req: Request<{}, {}, ICidade>, res: Response) => {
+export const createList = async (req: Request<{}, {}, ICidade>, res: Response) => {
   const data = req.body.nome;
   const newData = req.body.estado;
 
